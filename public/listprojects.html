@@ -1,0 +1,80 @@
+<!--
+  CCTB Website Development
+  IST105
+  Oct 2024
+  Description: This is a simple login website where students are asked to 
+  implement Social Network Login with Firebase
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Firebase App with Authentication with Social Networks">
+  <title>Home - Social Networks</title>
+  <link rel="stylesheet" href="css/core.min.css" />
+  <link rel="stylesheet" href="css/vendor_bundle.min.css" />
+
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
+  <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="https://matriz-teletrabajo-utc.web.app/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script src="js/home.js"></script>
+  <style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+    .moodal-content {
+        background-color: firebrick;
+        margin: 15%;
+        padding: 20px;
+        width: 80%;
+    }
+    .close {
+        color: blue;
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center;"><B><I><U>Sofia Saltos Home Page</U></I></B></h1>
+  <hr>
+  <h2 style="text-align: center;">CCTB - College</h2>
+  <h3><U>List of Projects:</U></h3>
+  <a href="https://assignment1sofiasaltos.web.app">Assignment 1</a><br>
+  <a href="https://assignment2sofiasaltos.web.app">Assignment 2</a><br>
+  <a href="https://assignment3sofiasaltos-6c867.web.app">Assignment 3</a><br>
+  <div class="row">
+    <div class="col-lg-12">
+      <a id="sign-out" class="btn bg-danger mt-4 text-white w-100" href="#">Sign Out</a>
+    </div>
+  </div>
+  <button id="myBtn">View Wireframe</button>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Wireframe</p>
+        <img src="./wireframe.png" alt="wireframe.png">
+
+    </div>
+
+  </div>
+</body>
